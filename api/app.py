@@ -10,5 +10,10 @@ def daily():
 def activities():
     return jsonify({"activities": []})
 
+@app.route('/api/healthz')
+def healthz():
+    return 'OK', 200
+
+
 def handler(request, context):
     return app(request.environ, start_response)
