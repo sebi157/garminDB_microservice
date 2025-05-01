@@ -10,7 +10,7 @@ def daily():
 def activities():
     return jsonify({"activities": []})
 
-@app.route('/api/healthz')
+@app.route('/healthz')
 def healthz():
     return 'OK', 200
 
